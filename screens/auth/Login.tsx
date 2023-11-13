@@ -1,19 +1,16 @@
 import React from 'react';
-import { StyledContainer, Title, WelcomeLogo } from '../../components/style';
+import { Container, Title, WelcomeLogo } from '../../components/style';
 import { StatusBar } from 'expo-status-bar';
 import { ImageRequireSource } from 'react-native';
 
-interface LoginProps {
-  source: ImageRequireSource;
-}
 
-const Login: React.FC<LoginProps> = ({ source }) => {
+
+const Login: React.FC = () => {
   return (
-    <StyledContainer>
-      <StatusBar style='dark' />
+    <Container>
+      <StatusBar style="dark" />
       <Title>Hello!</Title>
-      <WelcomeLogo resizeMode='contain' source={source} />
-    </StyledContainer>
+    </Container>
   );
 };
 

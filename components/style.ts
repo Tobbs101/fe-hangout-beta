@@ -7,7 +7,7 @@ const statusBarHeight = Constants.statusBarHeight;
 
 const { primary, secondary, customGray } = Colors;
 
-interface StyledContainerProps {
+interface ContainerProps {
   padding?: string;
 }
 
@@ -23,7 +23,7 @@ interface SubTitleProps {
   fontSize?: number;
 }
 
-export const StyledContainer = styled.View<StyledContainerProps>`
+export const Container = styled.View<ContainerProps>`
   flex: 1;
   padding: ${({ padding }) => padding || '25px'};
   padding-top: ${({ padding }) => padding || `${statusBarHeight + 10}px`};
@@ -53,4 +53,12 @@ export const SubTitle = styled(Text)<SubTitleProps>`
   margin-bottom: 20px;
   letter-spacing: 1px;
   font-weight: bold;
+`;
+
+export const Subtitle = styled.Text`
+  color: #fff;
+  fontsize: 16;
+  width: 85%;
+  marginleft: '10';
+  fontweight: 600;
 `;
