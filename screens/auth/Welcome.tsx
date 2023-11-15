@@ -62,7 +62,7 @@ const Welcome: React.FC = () => {
             fontSize: 17,
             width: '100%',
             position: 'absolute',
-            bottom: 15,
+            bottom: 13,
             fontWeight: '500',
           }}
         >
